@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anna Del Savio</title>
+  <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="reset.css" type="text/css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script>
+    window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    title:{
+      text:"David Van Zandt Compensation",
+      fontFamily:"sans-serif",
+    },
+    axisX:{
+      interval: 1
+    },
+    axisY2:{
+      title: "Percentile",
+      tickLength: 0,
+      gridColor: "white",
+      labelFontColor: "white",
+    },
+    data: [{
+      type: "bar",
+      name: "companies",
+      axisYType: "secondary",
+      color: "#5A783C",
+      dataPoints: [
+      { y: 93, label: "Ratio of total compensation to faculty salary" },
+      { y: 89, label: "Full-professor salary (average salary in 2013-2014)" },
+      { y: 92, label: "Pay-to-tuition ratio" },
+      { y: 73, label: "Average tuition and fees (2013-2014)" },
+      { y: 32, label: "Pay per millions in expenses" },
+      { y: 88, label: "Institution's expenses (total expenses in 2013-2014)" },
+      { y: 94, label: "Total compensation (2014)" },
+      ]
+
+    }]
+  });
+  chart.render();
+}
+</script>
+</head>
+<body> 
+  <div class="header">
+    <h1><a href="index.html">Anna Del Savio</a></h1>
+    <div class="nav">
+      <ul> 
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="reading.html">What I'm Reading</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+   <div class="col s12 m8 offset-m1">
+    <div class="headline">
+      <br />
+      <h2>The New School Free Press</h2>
+      <hr />
+      <br />
+      <h1>Van Zandt Earns $1.1 Million Because Universities Want Their Presidents to Be Like CEOs, Experts Say</h1> 
+    </div>
+    <br />
+    <div class="headerimage">
+      <img src="https://d3cy9zhslanhfa.cloudfront.net/media/F3E6ADE2-8E6B-4562-A1E8850B41A37768/84663AEC-7AC2-4534-B9E1BC4731892186/webimage-E965FE9F-4B08-4DC5-8AF0F1777078FE11.jpg" alt="New School President David Van Zandt">
+      <br /><a>President David Van Zandt in August 2010. Photo by Matthew Sussman.</a>
+    </div>
+    <br />
+    <div class="byline">
+      <ul>
+        <li>By Anna Del Savio, Emilce Quiroz</li>
+        <li>Published May 15, 2017</li>
+      </ul>
+    </div>
+    <br />
+    <p>The New School president’s earnings have been in the spotlight because of flyers posted by SENS-UAW, the student workers of The New School currently <a href="http://www.newschoolfreepress.com/2017/04/28/bernie-sanders-supports-sens-uaw-union-vote/">involved</a> in an ongoing effort to unionize.</p>
+    <p>Van Zandt made a total of $1.1 million, including housing allowances, for the fiscal year 2014-2015, the most recent year for which administrator salary information is publicly available. Van Zandt was also paid $163,394 in deferred compensation, or payment set aside to be received after a certain number of years.</p>
+    <p>Some New School students have called for a closer look at the university’s finances, particularly the compensation of the president and other administrators. The brouhaha over President Van Zandt’s salary reflects a nationwide discussion about the rising salaries of private college presidents, as well as the changing role of university presidencies overall.</p>
+    <p>In an interview with The New School Free Press, Van Zandt pointed out that he didn’t receive a raise last year. “Many times we haven’t taken raises because we have to hold the line a bit on faculty increases too,” he said.</p>
+    <p>Falling enrollment in his first two years as President meant staff and faculty didn’t receive raises either. Between 2011 and 2013, Van Zandt’s total compensation fell $126,227, according to a 2016 report by The Chronicle of Higher Education.</p>
+    <p>Of the over 600 private universities in the study, Van Zandt was the 30th highest paid private college president in fiscal year 2014-2015, according to the Chronicle.</p>
+    <p>NYU’s former President, John E. Sexton, made over $1.5 million, including benefits, in fiscal year 2014-2015.</p>
+    <p>Both Sexton and Van Zandt are presidents of private universities in New York City that share the the same stomping grounds in lower Manhattan, yet NYU’s student body trumps the New School’s by several thousands. NYU boasts a student body over 50,000 on their New York City, Abu Dhabi and Shanghai campuses and The New School’s student body is slightly over 10,000.</p>
+    <p>Van Zandt made far less than the highest-paid private university president in the U.S., Jack P. Varsalona of Wilmington University, who made $5.4 million in fiscal year 2014-2015, according to The Chronicle of Higher Education.</p>
+    <p>Much of the criticism of Van Zandt’s salary leveled by student union organizers addresses the gap between Van Zandt’s compensation and the wages earned by faculty and student workers. The average salary for the 416 full-time professors at The New School was $140,076. Van Zandt’s compensation is slightly over 8 times that amount, according to the Chronicle.</p>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <br />
+    <br />
+    <p>Among the universities included in The Chronicle report, the ratio of Van Zandt’s salary to the average full professor at the University was higher than 93 percent of the schools included in the report.</p>
+    <p>As of fall 2015, the university employed 364 executives, administrators and managers, according to a 2016 university report. At the time, the university had 416 full-time faculty and 1,778 part-time faculty.</p>
+    <p>Van Zandt said that administrator salaries are adequate. “We’re confident that [the administration is] being fairly compensated. The board makes that decision, ultimately, ” he said.</p>
+    <p>“The disparity between the salaries of the administrators and the educators is indicative of how far the school’s leadership has strayed from its historically progressive values,” said Juliana Broad, an undergraduate research assistant who helped with the SENS-UAW campaign.</p>
+    <p>“Certain paid positions at The New School — the president, administrators, marketing officers, etc. — are privileged over those of the people who make the school what it is: the educators,” Broad said.</p>
+    <p>Raymond D. Cotton, a partner in the Nelson Mullins law firm, said that he’s encountered the argument from both sides in his work consulting on executive compensation in higher education. “[Faculty] say ‘The president makes too much. But for us faculty, there’d be no university,’’’ Cotton said. “Well, what the faculty doesn’t get is that but for the president doing a lot of fundraising and managing the money and managing the people, there wouldn’t be a university either.”</p>
+    <p>Across the East River, Pratt president Thomas F. Schutte earned $740,278 in total compensation in 2014, less than two-thirds of Van Zandt’s compensation.</p>
+    <p>Yet, when put in the context of university expenses, Schutte earned a large chunk. For every $1 million Pratt spent in 2014, Schutte earned $5,211.</p>
+    <p>In comparison, for every $1 million The New School spent in 2014, Van Zandt made $3,394, less than the presidents at 68 percent of universities in the Chronicle study.</p>
+    <p>Based on data including enrollment, endowment, and expenditures, The Chronicle report showed that DePaul University and Seton Hall University are among institutions similar to The New School.</p>
+    <p>At DePaul, President Dennis H. Holtschneider made $861,393 in total compensation, or $1,536 per $1 million in expenses in 2014, while Seton Hall president A. Gabriel Esteban made $726,343, or $2,877 per $1 million in expenses.</p>
+    <p>In proportion to university expenses, Van Zandt’s salary was slightly higher than at eight out of nine universities that The Chronicle compared to The New School.</p>
+    <p>The growth in university administrator salaries that has occurred in recent years is justified by those who say that university presidents should be paid like corporate leaders.</p>
+    <p>Cotton said that he’s seen huge shifts in the role of universities presidents throughout his 30-plus years in the field. “When [boards] have a new search, looking for a president, I ask them, ‘What are the top three qualities you’re looking for?’ And they always start, number one is fundraising.”</p>
+    <p>Boards also search for “a president who can run the institution,” said Cotton. “By that I mean they don’t want there to be a lot of blowups, they don’t like faculty strikes, they don’t like student sit-ins, they want the place to run smoothly because board members are part-time and they’re volunteers. Thirdly, they want the president to be able to work with the faculty, because they don’t understand faculty. And they don’t know how to communicate with faculty.”</p>
+    <p>James Finkelstein, Professor Emeritus of Public Policy at George Mason University, has conducted research on university presidents for nearly two decades.</p>
+    <p>He said that unlike a few decades ago, university presidents in 2017 “look more like a corporate executive walking around campus than an absent-minded professor.” According to Finkelstein, university presidents used to see themselves as “the intellectual leader of the institution,” focused on the academics.</p>
+    <p>But that focus on academics has changed. According to a 2015 report by from The Chronicle, fundraising activity done by presidents themselves has increased in recent years, and increased fundraising is the top way presidents at both public and private universities are boosting revenue.</p>
+    <p>Finkelstein said that some administrators, board members, and compensation consultants feel that university presidents should be paid “according to the size and scope of the institution they’re running,” regardless of whether it’s in education or the private sector.</p>
+    <p>“[But] there is no evidence at all to suggest that paying a university president more increases any kind of performance metric within the institution,” Finkelstein said.</p>
+    <p>According to Stephen Stabile, vice president for finance & business and treasurer at The New School, high-level administrator compensation is determined by the compensation committee of the Board of Trustees.</p>
+    <p>In fiscal year 2014-2015, the ten highest-compensated employees at The New School were Van Zandt, provost Tim Marshall, two faculty members, two deans, and four other members of the University’s senior leadership.</p>
+    <p>Administrators propose changes in compensation to the committee, which then “works with an outside firm with expertise on compensation for non-profits. These consultants review the university’s compensation to be sure that it is in line with similar organizations,” Stabile said.</p>
+    <p>The university declined to specify which members of the board were on the compensation committee, citing privacy policies.</p>
+    <p>Linda Rappaport, who according to the New School communications office is the chair of the compensation committee for the board, said via email that “the Board of Trustees’ process for setting presidential compensation is guided by best practices followed by universities to ensure presidential, senior administrative officer and dean compensation is reasonable and market-competitive.”</p>
+    <p>Rappaport also advises on compensation-related matters for Wells Fargo, Citigroup, Fidelity, and a number of other financial institutions, according to her law firm.</p>
+    <p>Cotton and Finkelstein both felt that university presidents are now expected to function more like CEOs than in the past, and both cited the changing composition of university boards. “There’s been a huge turnover of the types of people that serve on [boards] and these business folks have brought their business ideas,” said Cotton. “They brought their compensation ideals with them.”</p>
+    <p>Of the 40 current members of the New School board of trustees, 26 trustees, or more than 60 percent, work in business or finance.</p>
+    <p>Mercer, the consulting firm that works with the New School’s board of trustees to establish administrator salaries, works with both nonprofits and for-profit corporations. According to their website, they offer consulting services focused on organizations’ compensation to “serve the interests of executives, owners, and the organization” with the goal of having a “measurable impact” on “performance, efficiency, and risk management” while managing “the growing complexity of regulations, legislation and shareholder demands.”</p>
+    <p>In speaking with the Free Press, President Van Zandt added that some outrage over pay is to be expected.</p>
+    <p>“That’s always going to be controversial or contentious, what [administrators] get paid in any non-profit situation,” the president said.</p> 
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+  <ul>
+    <li><a href=https://www.instagram.com/annadelsavio>Instagram</a></li>
+    <li><a href=https://www.twitter.com/annadelsavio>Twitter</a></li>
+    <li><a href=https://www.linkedin.com/in/anna-del-savio-42883110b/>LinkedIn</a></li>
+    <br />
+      <br />
+      <li>© 2017 Anna Del Savio</li>
+  </ul>
+  </div>
+</body>
+</html>
